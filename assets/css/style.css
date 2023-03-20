@@ -7,7 +7,7 @@
 :root{
     --select-bg: #e9e9ed;
     --main-bg: #7fffd4;
-    --selected-cell: #4dc6e2; 
+    --selected-cell: #4dc6e2;  
 }
 
 select{
@@ -38,5 +38,8 @@ main{
 
 .bg_selected{
     background-color: var(--selected-cell);
+}
+.bg_bomb{
+    background-color: red;
 }
 
