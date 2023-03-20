@@ -41,7 +41,8 @@ playEl.addEventListener('click', function () {
                 thisCell.classList.add("bg_bomb")
                 setTimeout(() => {
                     alert(`Hai perso! Il tuo punteggio finale è ${points}`);
-                }, 1);                            
+                }, 1);
+                location.reload();                            
             }
         })
     }
@@ -66,4 +67,3 @@ playEl.addEventListener('click', function () {
         return bombsRandomNumber;
     }
 })
-
