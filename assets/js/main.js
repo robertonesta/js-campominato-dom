@@ -23,9 +23,6 @@ playEl.addEventListener('click', function(e){
 
   const cellEl = document.querySelectorAll(".cell")
 
-  // aggiungo eventlistener per la classe active ciclando per la lunghezza dell'array cellEl
-
-
   for (let i = 0; i < cellEl.length; i++) {
     const thisCell = cellEl[i];
     console.log(thisCell)
@@ -37,6 +34,10 @@ playEl.addEventListener('click', function(e){
 }
 })
 
-
-
+//-generare 16 numeri casuali nello stesso range della difficoltà prescelta: le bombe.
+//nella stessa cella può essere posizionata al massimo una bomba, perciò nell’array delle bombe non potranno esserci due numeri uguali.
+//Se si clicca su una cella che è una bomba: la cella si colora di rosso e finisce la partita.
+//Altrimenti si colora di azzurro e si può continuare a cliccare sulle altre celle.
+//la partita finisce o quando si clicca su una bomba o quando si cliccano tutte le celle che non sono bombe.
+//a fine partita il software genera il punteggio finale delle celle blu cliccate.
 
