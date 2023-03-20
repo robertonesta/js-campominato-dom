@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --select-bg: #e9e9ed;
+    --main-bg: #7fffd4;
+    --selected-cell: #4dc6e2; 
+}
+
+select{
+    background-color: var(--select-bg);
+    width: 150px;
+    border-radius: 5px;
+}
+
+main{
+    background-color: var(--main-bg);
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cell{
+    width: calc(100% / 10);
+    border: 1px solid;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg_selected{
+    background-color: var(--selected-cell);
+}
+
